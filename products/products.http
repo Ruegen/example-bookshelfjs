@@ -1,0 +1,21 @@
+@server = http://localhost:3000
+###
+GET {{server}}/products
+
+
+###
+GET {{server}}/products/1
+Content-Type: application/json
+
+###
+DELETE  {{server}}/products/1
+Content-Type: application/json
+
+
+###
+POST {{server}}/products
+Content-Type: application/json
+
+{
+    "name": "Windows PC"
+}
